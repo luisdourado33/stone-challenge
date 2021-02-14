@@ -11,8 +11,9 @@ const path = require('path');
 const { buildLists } = require('./build');
 
 const parameters = {
-    amountItems: null,
-    amountEmails: null
+    isAutoGenerate: true,
+    amountItems: 5,
+    amountEmails: 5
 }
 
 console.log(buildLists(parameters));

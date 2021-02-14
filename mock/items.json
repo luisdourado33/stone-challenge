@@ -1,11 +1,9 @@
-[
-    {
-        "items": [
-            {
-                "name": "Item name",
-                "price": 10,
-                "amount": 10
-            }
-        ]
-    }
-]
+{
+    "items": [
+        {
+            "name": "Item name",
+            "price": 10,
+            "amount": 10
+        }
+    ]
+}
