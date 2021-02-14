@@ -4,6 +4,21 @@
             "name": "Item name",
             "price": 10,
             "amount": 10
+        },
+        {
+            "name": "Item name 2",
+            "price": 11,
+            "amount": 11
+        },
+        {
+            "name": "Item name 3",
+            "price": 12,
+            "amount": 12
+        },
+        {
+            "name": "Item name 4",
+            "price": 12,
+            "amount": 12
         }
     ]
 }

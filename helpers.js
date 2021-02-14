@@ -3,8 +3,7 @@ const fs = require('fs');
 function processFile(filePath) {
     try {
         if (!filePath)
-            throw "Please, insert a correct JSON filepath.";
-
+            throw "Por favor, insira um arquivo de entrada válido.";
         const fileContent = JSON.parse(fs.readFileSync(filePath, 'utf8'))
         return fileContent;
     } catch (error) {
@@ -17,4 +16,8 @@ function randomNumber() {
     return value == 0 ? 1 : value;
 }
 
-module.exports = { processFile, randomNumber }
+function checkIsEmpty() {
+    return null;
+}
+
+module.exports = { processFile, randomNumber, checkIsEmpty }
