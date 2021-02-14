@@ -1,5 +1,3 @@
-const path = require('path');
-
 /**
  * Stone Challenge
  * 
@@ -8,12 +6,12 @@ const path = require('path');
  * 
  */
 
-const { buildLists } = require('./build');
+const { listFactory } = require('./listFactory');
 
 const parameters = {
-    isAutoGenerate: true,
+    generateRandomicLists: false,
     amountItems: 5,
     amountEmails: 5
 }
 
-console.log(buildLists(parameters));
+console.log(listFactory(parameters));
