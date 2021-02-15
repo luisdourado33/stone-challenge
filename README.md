@@ -1,8 +1,11 @@
 # [Stone Challenge](https://gist.github.com/programa-elixir/1bd50a6d97909f2daa5809c7bb5b9a8a) &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/facebook/react/blob/master/LICENSE) [![npm version](https://img.shields.io/badge/npm-7.0.8-brightgreen)](https://www.npmjs.com/)
 
 Programa de Formação em Elixir | Teste Técnico
+<b>Candidato:</b> Luís Antônio da Silva Dourado
+### Considerações
+Para realização do desafio, foi utilizada a linguagem de programação `JavaScript` com o auxilío do `NodeJS` para execução do script `main.js`.
 
-### Itens necessários:
+### Instalações necessárias:
 
 - [Node](https://nodejs.org/en/download/)
 
