@@ -51,12 +51,12 @@ const listFactory = (params) => {
          */
         let checks = checkJson(ITEMS_PATH, EMAILS_PATH);
         if (checks) {
-            checks.items.map(item => {
-                itemsList.push(item)
-            })
-            checks.emails.map(email => {
-                itemsList.push(item)
-            })
+            let items = checks.itemData['items'];
+            let emails = checks.emailData['emails'];
+
+            Array.prototype.push.apply(itemsList, items);
+            Array.prototype.push.apply(emailsList, emails);
+            Message.showOutput(emailsList, calculateTotalValue(itemsList));
         } else {
             Message.emptyList();
         }

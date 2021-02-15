@@ -1,7 +1,12 @@
 {
-    "emails": [
+    "emails": [{
+            "address": "mailaddress@email.com"
+        },
         {
-            "address": "address@email.com"
+            "address": "mailaddress2@email.com"
+        },
+        {
+            "address": "mailaddress2@email.com"
         }
     ]
 }

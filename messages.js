@@ -7,7 +7,13 @@ function emptyList() {
 
 function showOutput(emailsList, valueToPay) {
     emailsList.map(user => {
-        console.log(`${user}: ${colors.BgRed}${colors.Bright}R$${valueToPay}${colors.Reset}`);
+        let dictionary = {
+            "email": user.address ? user.address : user,
+            "value": valueToPay
+        }
+
+        console.log(dictionary)
+            // console.log(`${user.address ? user.address : user}: ${colors.BgRed}${colors.Bright}R$${valueToPay}${colors.Reset}`);
     });
 }
 

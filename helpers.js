@@ -13,19 +13,25 @@ const checkIsEmpty = (params) => {
 }
 
 const checkJson = (itemPath, emailPath) => {
-    const itemData = fs.readFileSync(itemPath, 'utf8');
-    const emailData = fs.readFileSync(emailPath, 'utf8');
+    const itemData = JSON.parse(fs.readFileSync(itemPath, 'utf8'));
+    const emailData = JSON.parse(fs.readFileSync(emailPath, 'utf8'));
 
-    if (itemData.length === 0 || emailData.length === 0) {
-        return false;
-    } else {
-        let data = {
-            items: JSON.parse(itemData.items),
-            emails: JSON.parse(emailData.emails)
+    let obj;
+    if (itemData && emailData) {
+        // console.log(itemData)
+        if (itemData['items'].length === 0 || emailData['emails'].length === 0) {
+            obj = false;
+        } else {
+            obj = {
+                itemData,
+                emailData
+            }
         }
-
-        return data
+    } else {
+        obj = false;
     }
+
+    return obj;
 }
 
 const calculateTotalValue = (list) => {
