@@ -71,7 +71,7 @@ E o arquivo `main.js` deve estar dessa forma:
 17 }
 ```
 
-Após ter assegurado que todos os parâmetros foram definidos corretamente, podemos iniciar a aplicação com o seguinte comando:
+Após termos assegurado de que todos os parâmetros foram definidos corretamente, podemos iniciar a aplicação com o seguinte comando:
 
 ```sh
 node main.js
