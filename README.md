@@ -23,10 +23,10 @@ Programa de Formação em Elixir | Teste Técnico
 ```
 
 ### Iniciando a aplicação
-Para iniciar a aplicação, primeiramente você precisará definir quais serão os parâmetros de listagem, e para isso, é necessario acessar o arquivo <b>main.js</b> na raíz da aplicação.
+Para iniciar a aplicação, primeiramente você precisará definir quais serão os parâmetros de listagem, e para isso, é necessario acessar o arquivo `main.js` na raíz da aplicação.
 
 #### Listas automáticas
-Se você deseja que a aplicação gere listas aleatórias, acesse <b>./main.js</b> e define conforme o código abaixo:
+Se você deseja que a aplicação gere listas aleatórias, acesse `main.js` e define conforme o código abaixo:
 
 ```JavaScript
 13 const parameters = {
@@ -37,11 +37,11 @@ Se você deseja que a aplicação gere listas aleatórias, acesse <b>./main.js</
 ```
 
 #### Listas manuais
-Caso opte por criar as suas próprias listas, acesse os arquivos <b>emails.json e items.json</b> que estão localizados na pasta <b>mock</b>.
+Caso opte por criar as suas próprias listas, acesse os arquivos `emails.json` e `items.json` que estão localizados na pasta <b>mock</b>.
 
 Os objetos foram definidos com os seguintes padrões de atributos:
 
-<b>items.json</b>
+`items.json`
 ```sh
 {
   "items": [
@@ -53,7 +53,7 @@ Os objetos foram definidos com os seguintes padrões de atributos:
 }
 ```
 
-<b>emails.json</b>
+`emails.json`
 ```sh
 {
   "emails": [
@@ -62,7 +62,7 @@ Os objetos foram definidos com os seguintes padrões de atributos:
     }
 }
 ```
-E o arquivo <b>main.js</b> deve estar dessa forma:
+E o arquivo `main.js` deve estar dessa forma:
 ```JavaScript
 13 const parameters = {
 14   generateRandomicLists: false, // Altere para FALSE
@@ -77,6 +77,8 @@ Após ter assegurado que todos os parâmetros foram definidos corretamente, pode
 node main.js
 ```
 
+### Pasta mock
+Este diretório contém arquivos no formato JSON referentes aos itens que preencherão as listas utilizadas na aplicação.
 ### Licença
 
 [MIT License](./LICENSE).

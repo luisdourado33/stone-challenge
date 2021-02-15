@@ -27,8 +27,8 @@ const listFactory = (params) => {
             for (let i = 0; i < params.amountItems; i++) {
                 let item = {
                     "name": `Item #${randomNumber()}`,
-                    "price": randomNumber(),
-                    "amount": randomNumber()
+                    "price": Math.round(randomNumber()),
+                    "amount": Math.round(randomNumber())
                 }
 
                 itemsList.push(item);
@@ -53,6 +53,13 @@ const listFactory = (params) => {
         if (checks) {
             let items = checks.itemData['items'];
             let emails = checks.emailData['emails'];
+
+            /**
+             * Round values to the next integer value
+             */
+            items.map(item => {
+                item.price = Math.round(item.price)
+            });
 
             Array.prototype.push.apply(itemsList, items);
             Array.prototype.push.apply(emailsList, emails);

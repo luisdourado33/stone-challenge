@@ -6,15 +6,16 @@ function emptyList() {
 }
 
 function showOutput(emailsList, valueToPay) {
+    let dictionary = {}
     emailsList.map(user => {
-        let dictionary = {
-            "email": user.address ? user.address : user,
-            "value": valueToPay
-        }
-
-        console.log(dictionary)
-            // console.log(`${user.address ? user.address : user}: ${colors.BgRed}${colors.Bright}R$${valueToPay}${colors.Reset}`);
+        let key = user.address ? user.address : user;
+        // Insert into dict
+        dictionary[key] = valueToPay;
     });
+    /**
+     * Returns dictionary
+     */
+    console.log(dictionary)
 }
 
 module.exports = { emptyList, showOutput }

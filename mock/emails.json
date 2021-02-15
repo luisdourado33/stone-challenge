@@ -6,7 +6,16 @@
             "address": "mailaddress2@email.com"
         },
         {
-            "address": "mailaddress2@email.com"
+            "address": "mailaddress3@email.com"
+        },
+        {
+            "address": "mailaddress4@email.com"
+        },
+        {
+            "address": "mailaddress5@email.com"
+        },
+        {
+            "address": "mailaddress6@email.com"
         }
     ]
 }

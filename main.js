@@ -11,9 +11,9 @@
 const { listFactory } = require('./listFactory');
 
 const parameters = {
-    generateRandomicLists: true,
-    amountItems: 5,
-    amountEmails: 5
+    generateRandomicLists: false,
+    amountItems: 10,
+    amountEmails: 10
 }
 
 console.log(listFactory(parameters));
